@@ -22,6 +22,8 @@ Enhancements:
   RSpec's `--color` option. (Ashley Engelund, #2038)
 * Add option to configure RSpec to raise errors when issuing warnings.
   (Jon Rowe, #2052)
+* Stop rescuing `NoMemoryError`, `SignalExcepetion`, `Interrupt` and
+  `SystemExit`. It is dangerous to interfere with these. (Myron Marston, #2063)
 
 Bug Fixes:
 
